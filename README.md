@@ -1,8 +1,8 @@
 # UdacityIaC
 
-*The Basics
-  *Parameters
-  *Resources
-  *Outputs
-  *Working Test
+**The Basics
+  **Parameters
+  **Resources
+  **Outputs
+  **Working Test
   
