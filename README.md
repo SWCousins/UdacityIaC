@@ -1,20 +1,22 @@
 # UdacityIaC
 
 **The Basics**
-  * Parameters
-  * Resources
-  * Outputs
-  * Working Test
+  * Parameters :white_check_mark:
+  * Resources :no_entry:
+  * Outputs :no_entry:
+  * Working Test :no_entry:
   
 **Load Balancer**
- * Target Group
- * Health Check and Listener
+ * Target Group :no_entry:
+ * Health Check and Listener :no_entry:
  
 **Auto-Scaling**
- * Subnets
- * Machine Specs
- * SSH Key
+ * Subnets :no_entry:
+ * Machine Specs :no_entry:
+ * SSH Key :no_entry:
  
 **Bonus**
- * Output
- * Bastion Host
+ * Output :no_entry:
+ * Bastion Host :no_entry:
+ 
+ /play butts
