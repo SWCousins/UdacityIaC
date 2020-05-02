@@ -1,6 +1,6 @@
 # UdacityIaC
 
-**The Basics
+**The Basics**<br />
   **Parameters
   **Resources
   **Outputs
