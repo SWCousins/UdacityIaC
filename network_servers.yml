@@ -260,15 +260,17 @@ Resources:
             Fn::Base64: !Sub |
               #!/bin/bash
               apt-get update -y
-              apt-get install awscli -y
+              apt-get install unzip awscli -y
               apt-get install apache2 -y
-
               systemctl start apache2.service
-
               cd /var/www/html
-              aws s3 cp s3:// !!!
+              
+              aws s3 cp s3://udagram-bucket-1133/index.zip .
+              
+              unzip -o index.zip
+              rm index.zip
           ImageId: !Ref WebServerImageId
-          IamInstanceProfile: !Ref S3GetInstanceProfile
+          #IamInstanceProfile: !Ref S3GetInstanceProfile
           SecurityGroups:
           - !Ref WebServerSecGroup
           InstanceType: !Ref WebServerInstanceType
