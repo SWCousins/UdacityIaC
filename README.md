@@ -7,12 +7,12 @@
   * Working Test :no_entry:
   
 **Load Balancer**
- * Target Group :no_entry:
- * Health Check and Listener :no_entry:
+ * Target Group :white_check_mark:
+ * Health Check and Listener :white_check_mark:
  
 **Auto-Scaling**
- * Subnets :no_entry:
- * Machine Specs :no_entry:
+ * Subnets :white_check_mark:
+ * Machine Specs :white_check_mark:
  * SSH Key :no_entry:
  
 **Bonus**
