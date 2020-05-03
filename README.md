@@ -2,8 +2,8 @@
 
 **The Basics**
   * Parameters :white_check_mark:
-  * Resources :no_entry:
-  * Outputs :no_entry:
+  * Resources :white_check_mark:
+  * Outputs :white_check_mark:
   * Working Test :no_entry:
   
 **Load Balancer**
@@ -16,6 +16,6 @@
  * SSH Key :no_entry:
  
 **Bonus**
- * Output :no_entry:
+ * Output :white_check_mark:
  * Bastion Host :no_entry:
  
