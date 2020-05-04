@@ -265,12 +265,12 @@ Resources:
               systemctl start apache2.service
               cd /var/www/html
               
-              aws s3 cp s3://udagram-bucket-1133/index.zip .
+              aws s3 cp s3://udagram-bucket-1133/index.zip ./
               
               unzip -o index.zip
               rm index.zip
           ImageId: !Ref WebServerImageId
-          #IamInstanceProfile: !Ref S3GetInstanceProfile
+          IamInstanceProfile: !Ref S3GetInstanceProfile
           SecurityGroups:
           - !Ref WebServerSecGroup
           InstanceType: !Ref WebServerInstanceType
@@ -339,7 +339,35 @@ Resources:
             Values: [/]
           ListenerArn: !Ref 'Listener'
           Priority: 1
-            
+          
+    S3GetIAMRole:
+        Type: 'AWS::IAM::Role'
+        Properties:
+          AssumeRolePolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: 'Allow'
+                Principal:
+                  Service:
+                    - 'ec2.amazonaws.com'
+                Action:
+                  - 'sts:AssumeRole'
+          Path: '/'
+          Policies:
+            - PolicyName: S3GetPolicy
+              PolicyDocument:
+                Version: '2012-10-17'
+                Statement:
+                  - Effect: 'Allow'
+                    Action: 's3:Get*'
+                    Resource: '*'
+
+    S3GetInstanceProfile:
+          Type: 'AWS::IAM::InstanceProfile'
+          Properties:
+            Path: '/'
+            Roles:
+              - Ref: 'S3GetIAMRole'
 
 Outputs: 
 
