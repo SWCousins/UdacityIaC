@@ -9,7 +9,7 @@ To run:
   * Parameters :white_check_mark:
   * Resources :white_check_mark:
   * Outputs :white_check_mark:
-  * Working Test :white_check_mark: http://udaci-webap-1jkx8jcgk06d-820059718.us-west-2.elb.amazonaws.com/
+  * Working Test :white_check_mark:
   
 **Load Balancer**
  * Target Group :white_check_mark:
