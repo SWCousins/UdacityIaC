@@ -1,4 +1,4 @@
-# UdacityIaC
+# UdacityIaC    :shipit:
 
 To run:
  * AWS CLI needs to be installed and configured
