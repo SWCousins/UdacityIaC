@@ -18,7 +18,7 @@ To run:
 **Auto-Scaling**
  * Subnets :white_check_mark:
  * Machine Specs :white_check_mark:
- * SSH Key white_check_mark:
+ * SSH Key :white_check_mark:
  
 **Bonus**
  * Output :white_check_mark:
